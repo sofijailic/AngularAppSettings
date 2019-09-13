@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {OAuthService} from 'angular-oauth2-oidc';
 
 @Component({
@@ -6,7 +6,7 @@ import {OAuthService} from 'angular-oauth2-oidc';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'oauthAngl';
 
   constructor(private oauthService: OAuthService){
