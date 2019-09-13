@@ -12,8 +12,8 @@ export class AppComponent implements OnInit {
   constructor(private oauthService: OAuthService){
   }
   private async ConfigureAuth() : Promise<void>{
-    this.oauthService.loginUrl= '';
-    this.oauthService.clientId= '';
+    this.oauthService.loginUrl= 'https://login.microsoftonline.com/955969cd-d2f8-476e-b654-700cff40c2a9/oauth2/v2.0/authorize';
+    this.oauthService.clientId= '8e3a42f5-e618-4fee-babe-7bde449e68a0';
     this.oauthService.resource= '';
     this.oauthService.logoutUrl= '';
     this.oauthService.redirectUri= window.location.origin + '/';
